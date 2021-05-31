@@ -12,5 +12,8 @@ This code takes the biggest number from a bidimensional Array an return them as 
 3. General-Factorial-function:
 This is a function that takes a number as a parameter, pass it as the argument of said function and returns the factorial version of said number. A factorialize number if one that is equal to the product of said number with each of its predecessors until it multiplies by 1. For example 5! = 5*4*3*2*1= 120.
 
-4. Largest-Number-in-an-Array
+4. Largest-Number-in-an-Array:
 Code that returns back the highest number contained in an Array, regardless of this being multidimensional.
+
+5. The-Length-of-the-longest-word-in-a-String:
+This code passes a string into a function and returns back the ".length" of the longest word in said string.
