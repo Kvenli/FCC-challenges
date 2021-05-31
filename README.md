@@ -24,3 +24,6 @@ This code takes two strings as parameter "str" and "target". transform them into
 7. Repeat a String Repeat a String:
 This code takes a string "str" and returns it a number of times(num).
 For num equal to zero or below returns and empty string "".
+
+8. Truncate a String:
+Reduce a string(str) to a length(num) and adds "..." to the end of the new truncated string, if said number is minor than the length of the string; if the number is equal or bigger return the whole untouched string.
