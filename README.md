@@ -20,3 +20,7 @@ This code passes a string into a function and returns back the ".length" of the 
 
 6. Confirm-Ending.
 This code takes two strings as parameter "str" and "target". transform them into arrays in which each letter of the strings through .match becomes an individual element of the new arrays. The end of "str" is use to build a new array with the same amount of elements that appear in "target" afterward this new array is inverted to match "target", the contents of this new array are past as a string and this string is compared to the string "target", if they match returns "true", otherwise returns "false".
+
+7. Repeat a String Repeat a String:
+This code takes a string "str" and returns it a number of times(num).
+For num equal to zero or below returns and empty string "".
