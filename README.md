@@ -7,4 +7,4 @@ The overall idea of the code is to take a string with any content in it, pass it
 This function works for phrases which include spaces between each word too.
 
 2. Biggest-number-in-each-Array:
-3. This code takes the biggest number from a bidimensional Array an return them as a new Array
+This code takes the biggest number from a bidimensional Array an return them as a new Array
