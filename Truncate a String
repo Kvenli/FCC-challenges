@@ -1,0 +1,20 @@
+function truncateString(str, num) {
+  const myRegex = /[a-z]|[\W]|\s/gi;
+  const arr = str.match(myRegex);
+  let slicedStr = "";
+  let truncatedStrArr = arr.slice(0, num);
+  //console.log(truncatedStr);
+  if(str.length > num) {
+    //console.log(arr);
+    for(let i = 0; i < truncatedStrArr.length; i++) {
+      slicedStr += arr[i];
+    }
+    //console.log(slicedStr += "...")
+    return slicedStr += "...";
+  } else if(str.length <= num) {
+    //console.log(str); //control point.
+    return str;
+  }
+}
+
+truncateString("A-tisket a-tasket A green and yellow basket", "A-tisket a-tasket A green and yellow basket".length);
