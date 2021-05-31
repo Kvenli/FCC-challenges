@@ -10,4 +10,7 @@ This function works for phrases which include spaces between each word too.
 This code takes the biggest number from a bidimensional Array an return them as a new Array.
 
 3. General-Factorial-function:
-This is a function that takes a number as a parameter, pass it as the argument of said function and returns the factorial version of said number. A factorialize number if one that is equal to the product of said number with each of its predecessors until it multiplies by 1. For example 5! = 5*4*3*2*1= 120
+This is a function that takes a number as a parameter, pass it as the argument of said function and returns the factorial version of said number. A factorialize number if one that is equal to the product of said number with each of its predecessors until it multiplies by 1. For example 5! = 5*4*3*2*1= 120.
+
+4. Largest-Number-in-an-Array
+Code that returns back the highest number contained in an Array, regardless of this being multidimensional.
