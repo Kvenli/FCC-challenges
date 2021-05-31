@@ -1,0 +1,22 @@
+function confirmEnding(str, target) {
+  const strArr = str.match(/[a-z]/gi); //console.log(strArr); //array form of "str".
+  const targetArr = target.match(/[a-z]/gi); //console.log(targetArr); //array form of "target".
+  const arrayHolder = [];
+  let stringArrayHolder = "";
+  for(let i = (str.length) -1; i > (((str.length) -1)-(target.length)); i--) {
+    //console.log(str[i]); Control point for inverse counting loop
+    arrayHolder.unshift(str[i])
+  }
+  //console.log(arrayHolder); //array containing the the same number of characters as elements in "target"
+  for(let j = 0; j < arrayHolder.length; j++) {
+    stringArrayHolder += arrayHolder[j];
+    //console.log(stringArrayHolder); //control point string version of arrayHolder
+  }
+  if(target == stringArrayHolder) {
+    return true;
+  } else {
+    return false
+  }
+}
+
+confirmEnding("Congratulation", "on");
