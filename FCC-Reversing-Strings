@@ -1,0 +1,52 @@
+//Basic code to reverse the order of strings 
+function reverseString(str) { 
+  let myRegex = /[a-z]|\s/gi; 
+  let fullStringRegex = /[a-z]+/; 
+  let arr = str.match(myRegex); 
+  let reverseArr = []; 
+for (let i = arr.length - 1; i >= 0; i--) { 
+  reverseArr.push(arr[i]); 
+} 
+console.log(arr); 
+console.log(reverseArr); }// Until this point the string is loaded as individual characters and inverted.
+
+//Complete code: 
+function reverseString(str) { 
+let myRegex = /[a-z]|\s/gi; 
+let arr = str.match(myRegex); 
+let reverseArr = []; 
+let retornatedStr = ""; 
+//First loop to load the inverted characters into reverseArr from .match(). 
+for(let i = arr.length - 1; i >= 0; i--) { 
+  reverseArr.push(arr[i]); 
+} 
+//Second loop to concatenate each character from reverseArr into retornatedStr. 
+for(let j = 0; j < reverseArr.length; j++) { 
+  retornatedStr += reverseArr[j];
+ } 
+//console.log(arr); //control point: Regular array containing the initial string.
+
+//console.log(reverseArr); //control point: Inverse array containing the inverse characters.
+
+return retornatedStr; 
+}
+
+reverseString("Greetings from Earth");
+
+Shorter version of the same code, but applying a new tool ".join()". 
+function reverseString(str) { 
+let myRegex = /[a-z]|\s/gi;
+let arr = str.match(myRegex);
+let reverseArr = [];
+
+//First loop to load the inverted characters into reverseArr from .match().
+for(let i = arr.length - 1; i >= 0; i--) { 
+  reverseArr.push(arr[i]); 
+} 
+//console.log(arr); //control point: Regular array containing the initial string.
+//console.log(reverseArr); 
+//control point: Inverse array containing the inverse characters./
+  return reverseArr.join(""); 
+} 
+
+reverseString("Greetings from Earth");
