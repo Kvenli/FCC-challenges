@@ -1,0 +1,21 @@
+function findLongestWordLength(str) {
+  let arr = str.match(/[a-z]+/gi);
+  let strCount = [];
+  //console.log(arr); //Control point: arr loaded with str matched to regex.
+  for(let i = 0; i < arr.length; i++) {
+    strCount.push(arr[i].length);
+  }
+  //console.log(strCount);
+  const antiDupArr = new Set(strCount);
+  const filteredArr = [...antiDupArr];
+  //console.log(filteredArr);
+  let highestNumber = 0;
+  for(let i = 0; i < filteredArr.length; i++) {
+    if(highestNumber < filteredArr[i]) {
+      highestNumber = filteredArr[i];
+    }
+  }
+  return highestNumber;
+}
+
+findLongestWordLength("The quick brown fox jumped over the lazy dog");
