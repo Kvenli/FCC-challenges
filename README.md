@@ -17,3 +17,6 @@ Code that returns back the highest number contained in an Array, regardless of t
 
 5. The-Length-of-the-longest-word-in-a-String:
 This code passes a string into a function and returns back the ".length" of the longest word in said string.
+
+6. Confirm-Ending.
+This code takes two strings as parameter "str" and "target". transform them into arrays in which each letter of the strings through .match becomes an individual element of the new arrays. The end of "str" is use to build a new array with the same amount of elements that appear in "target" afterward this new array is inverted to match "target", the contents of this new array are past as a string and this string is compared to the string "target", if they match returns "true", otherwise returns "false".
