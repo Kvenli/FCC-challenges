@@ -7,7 +7,7 @@ The overall idea of the code is to take a string with any content in it, pass it
 This function works for phrases which include spaces between each word too.
 
 2. Biggest-number-in-each-Array:
-/nThis code takes the biggest number from a bidimensional Array an return them as a new Array.
+This code takes the biggest number from a bidimensional Array an return them as a new Array.
 
 3. General-Factorial-function:
 This is a function that takes a number as a parameter, pass it as the argument of said function and returns the factorial version of said number. A factorialize number if one that is equal to the product of said number with each of its predecessors until it multiplies by 1. For example 5! = 5*4*3*2*1= 120.
