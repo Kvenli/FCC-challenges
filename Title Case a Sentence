@@ -1,0 +1,33 @@
+function titleCase(str) {
+const arrLowerCase = ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m","n", "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z"];
+
+const arrCap = ["A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L", "M", "N", "O","P", "Q", "R", "S", "T", "U", "V", "W", "X", "Y", "Z"];
+//console.log(arrCap.length);
+//console.log(arrLowerCase.length);
+const testArr = str.match(/[a-zA-Z]|\s|\W/g);
+//console.log(testArr);
+const newLowerCaseArr = [];
+
+for(let i = 0; i < testArr.length; i++) {
+  for(let j = 0; j < arrCap.length; j++) {
+    if(testArr[i] == arrCap[j]){
+      newLowerCaseArr.push(arrLowerCase[j]);
+      break;
+    } else if(testArr[i] == arrLowerCase[j]) {
+      newLowerCaseArr.push(testArr[i]);
+      break;
+    } else if(testArr[i] == '\'') {
+      newLowerCaseArr.push('\''); 
+      break;
+    } else if(testArr[i] == ' ') {
+      newLowerCaseArr.push(' ');
+      break;
+    }
+  }
+}   
+
+console.log(newLowerCaseArr);    
+
+}
+  
+titleCase("sHoRt AnD sToUt");
