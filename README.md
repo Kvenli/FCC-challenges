@@ -31,3 +31,6 @@ Reduce a string(str) to a length(num) and adds "..." to the end of the new trunc
 9. Title Case a Sentence:
 Code which takes an string and returns back a string with the first letter of each word capitalized and rest in lower case.
 This functions works with multiword strings, space between words and apostrophes.
+
+10. Title Case a Sentence:
+Function that copies the contents of one array into another from the index n.
