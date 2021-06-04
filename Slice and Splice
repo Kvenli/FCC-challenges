@@ -1,0 +1,14 @@
+function frankenSplice(arr1, arr2, n) {
+  const varArr = arr2.slice(0, arr2.length);
+  //console.log(varArr);
+  for(let i = arr1.length - 1; i >= 0; i--) {
+    varArr.splice(arr2.length - n, 0, arr1[i])
+  }
+  console.log(varArr);
+  return varArr;
+}
+
+frankenSplice([1, 2, 3], [4, 5, 6], 1);
+frankenSplice([1, 2, 3], [4, 5], 1);
+frankenSplice([1, 2], ["a", "b"], 1);
+frankenSplice(["claw", "tentacle"], ["head", "shoulders", "knees", "toes"], 2);
