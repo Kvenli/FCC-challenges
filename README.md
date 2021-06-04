@@ -34,3 +34,6 @@ This functions works with multiword strings, space between words and apostrophes
 
 10. Title Case a Sentence:
 Function that copies the contents of one array into another from the index n.
+
+11. Falsy Bouncer:
+A function that filters out falsy elements out of one dimensional arrays.
