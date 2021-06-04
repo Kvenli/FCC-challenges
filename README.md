@@ -27,3 +27,7 @@ For num equal to zero or below returns and empty string "".
 
 8. Truncate a String:
 Reduce a string(str) to a length(num) and adds "..." to the end of the new truncated string, if said number is minor than the length of the string; if the number is equal or bigger return the whole untouched string.
+
+9. Title Case a Sentence:
+Code which takes an string and returns back a string with the first letter of each word capitalized and rest in lower case.
+This functions works with multiword strings, space between words and apostrophes.
