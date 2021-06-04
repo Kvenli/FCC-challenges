@@ -1,13 +1,9 @@
 function titleCase(str) {
 const arrLowerCase = ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m","n", "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z"];
-
 const arrCap = ["A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L", "M", "N", "O","P", "Q", "R", "S", "T", "U", "V", "W", "X", "Y", "Z"];
-//console.log(arrCap.length);
-//console.log(arrLowerCase.length);
 const testArr = str.match(/[a-zA-Z]|\s|\W/g);
-//console.log(testArr);
+//console.log(testArr); //Control point: array version of the "str".
 const newLowerCaseArr = [];
-
 for(let i = 0; i < testArr.length; i++) {
   for(let j = 0; j < arrCap.length; j++) {
     if(testArr[i] == arrCap[j]){
@@ -25,9 +21,43 @@ for(let i = 0; i < testArr.length; i++) {
     }
   }
 }   
-
-console.log(newLowerCaseArr);    
-
+//console.log(newLowerCaseArr);    
+const finalCamelCaseArr = [];
+//First letter of the final String.
+for(let i = 0; i < arrLowerCase.length; i++) {
+  if(newLowerCaseArr[0] == arrLowerCase[i]) {
+    finalCamelCaseArr.push(arrCap[i]);
+    break;
+  }
+} //All the missing characters.
+for(let j = 1; j < newLowerCaseArr.length; j++) {
+  for(let i = 0; i < arrLowerCase.length; i++) {
+      
+     if(newLowerCaseArr[j] == ' ') {
+      finalCamelCaseArr.push(newLowerCaseArr[j]);
+      break;
+    } else if(newLowerCaseArr[j] == '\'') {
+      finalCamelCaseArr.push(newLowerCaseArr[j]);
+      break;
+    }
+    else if(newLowerCaseArr[j] == arrLowerCase[i] && newLowerCaseArr[j - 1] == ' ') {
+      finalCamelCaseArr.push(arrCap[i]);
+      break;
+    } else if (newLowerCaseArr[j] == arrLowerCase[i]) {
+      finalCamelCaseArr.push(newLowerCaseArr[j]);
+      break;
+    } 
+  }
+}
+//console.log(finalCamelCaseArr); //Control point: array loaded with the final characters.
+//Return of the string
+let finalStr = "";
+for(let i = 0; i < finalCamelCaseArr.length; i++) {
+  finalStr += finalCamelCaseArr[i];
+  //console.log(finalStr);
+}
+console.log(finalStr);
+return finalStr;
 }
   
-titleCase("sHoRt AnD sToUt");
+titleCase("I'm a little tea pot");
