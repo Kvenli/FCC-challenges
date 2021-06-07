@@ -37,3 +37,6 @@ Function that copies the contents of one array into another from the index n.
 
 11. Falsy Bouncer:
 A function that filters out falsy elements out of one dimensional arrays.
+
+12. Where do I Belong:
+A function that takes an array and its contents(only numbers) and reorder them from minor to greater, compares these values with its second parameter and determinates which value in the index is greater than or equal to it, returns back the index of the latter.
