@@ -1,0 +1,56 @@
+function mutation(arr) {
+  let strIndex0 = arr[0].toLowerCase();
+  let strIndex1 = arr[1].toLowerCase();
+  console.log(strIndex0);
+  //console.log(strIndex1);
+  let regex = /[a-z]/gi;
+  const arrIndex0Control = strIndex0.match(regex);
+  const arrIndex1Test = strIndex1.match(regex);
+  console.log(arrIndex0Control);
+  console.log(arrIndex1Test);
+  const experimentalArr = [];
+  //Filtering loop:
+  for(let j = 0; j <arrIndex0Control.length; j++) {  
+    for(let i = 0; i < arrIndex1Test.length; i++) {
+      if(arrIndex1Test[i] == arrIndex0Control[j]) {
+        //console.log(arrIndex1Test[i]);
+        experimentalArr.push(arrIndex0Control[j]);
+        break;
+        //console.log(experimentalArr);
+      } 
+    } 
+  }
+  //console.log(experimentalArr);
+  //Re-ordering loop:
+  const reOrderingArr = [];
+  for(let j = 0; j <arrIndex1Test.length; j++) {
+    for(let i = 0; i < experimentalArr.length; i++) {
+      if(experimentalArr[i] == arrIndex1Test[j]) {
+        reOrderingArr.push(arrIndex1Test[j]);
+        break;
+        //console.log(reOrderingArr);
+      } 
+      
+    }
+  }
+  //console.log(reOrderingArr);
+  let reOrderingStr = '';
+  for(let i = 0; i < reOrderingArr.length; i++) {
+    reOrderingStr += reOrderingArr[i];
+  }
+  console.log(reOrderingStr);
+  
+  if(strIndex1 === reOrderingStr) {
+    //console.log(true);
+    return true;
+  } else {
+    //console.log(false);
+    return false;
+  }
+  
+}
+
+//mutation(["hello", "hey"]);
+//mutation(["zyxwvutsrqponmlkjihgfedcba", "qrstu"]);
+//mutation(["Mary", "Army"]);
+//mutation(["floor", "for"])
