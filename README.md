@@ -45,3 +45,6 @@ A function that takes an array and its contents(only numbers) and reorder them f
 A function that takes an array with two sub-arrays containing strings and compares them.
 If all the letters of the second array match the ones in the first one return 'True', otherwise 'False'.
 The code takes uppercase and lowercase letters as the same.
+
+14. Chunky Monkey:
+A function that takes an array(parameter) and splits it into subarrays with a length equal to the parameter "size".
