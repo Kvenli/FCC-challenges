@@ -1,0 +1,23 @@
+function urlSlug(title) {
+  let titleArr = 
+  title
+  .toLowerCase()
+  .match(/[a-z]|\s*/g)
+  if(/\s/.test(titleArr[0])) {
+       titleArr.shift() 
+  } 
+  let finalTitleArray = [];
+  for(let i = 0; i < titleArr.length; i++) {
+    if(/[a-z]/.test(titleArr[i])) {
+      finalTitleArray.push(titleArr[i]);
+    } else if(/\s/.test(titleArr[i])) {
+      let hyphen = '-';
+      finalTitleArray.push(hyphen);
+    }
+  }
+  //console.log(finalTitleArray.join(''));
+  return finalTitleArray.join('');  
+}
+
+urlSlug("Winter Is Coming");
+urlSlug(" Winter Is  Coming");
