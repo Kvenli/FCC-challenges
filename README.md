@@ -50,4 +50,7 @@ The code takes uppercase and lowercase letters as the same.
 A function that takes an array(parameter) and splits it into subarrays with a length equal to the parameter "size".
 
 15. Apply Functional Programming to Convert Strings to URL Slugs(Functional Programming):
-A function that takes a String and returns a new one which replace the espaces for hyphens
+A function that takes a String and returns a new one which replace the espaces for hyphens.
+
+16. Sum All Numbers in a Range(Intermediate Algorithm Scripting);
+A function which reorder arrays to sum its elements and retun said sum.
