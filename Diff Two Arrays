@@ -1,0 +1,21 @@
+function diffArray(arr1, arr2) {
+  //console.log([...new Set(arr1.concat(arr2))]); //Control point
+  const combinedArray = [...new Set(arr1.concat(arr2))];
+  const newArr = [];
+  for(let i = 0; i < combinedArray.length; i++) {
+    if(!arr2.includes(combinedArray[i])) {
+      newArr.push(combinedArray[i])
+    }
+  }
+  for(let j = 0; j < combinedArray.length; j++) {
+    if(!arr1.includes(combinedArray[j])) {
+      newArr.push(combinedArray[j])
+    }
+  }
+  //console.log(newArr); //Control points.
+  return newArr;
+}
+
+diffArray([1, 2, 3, 5], [1, 2, 3, 4, 5]);
+diffArray([1, "calf", 3, "piglet"], [7, "filly"]);
+diffArray([], ["snuffleupagus", "cookie monster", "elmo"]);
