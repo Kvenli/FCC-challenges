@@ -58,3 +58,7 @@ A function which reorder arrays to sum its elements and retun said sum.
 17. Diff Two Arrays(Intermediate Algorithm Scripting):
 A function which takes two arrays and returns a new one which includes only the non-commom elements between them
 Solution throughout Array.includes().
+
+18. Seek and Destroy(Intermediate Algorithm Scripting):
+A function that takes an argument and splits it into one Array and another array that contains the arguments.
+This functions filters the elements in common amongst these two new arrays and returns any element(s) that do not match between them.
